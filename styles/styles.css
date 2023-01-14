@@ -194,10 +194,6 @@ a {
     overflow: visible;
 }
 
-.features-specialty-img > img{
-
-}
-
 .resize-experience {
     padding: 42px 46px;
     font-size: 25px;
@@ -250,6 +246,94 @@ a {
     color: var(--font-secondary-color);
 }
 
+/* Animation on Some facts*/
+/* ---------------------- */
+
+
+.fact-box>img{
+    animation: loop 1s ease-in;
+    animation-iteration-count: infinite;
+}
+.anim-left{
+    position: relative;
+    animation: leftToRight 4s infinite;
+}
+.anim-right{
+    position: relative;
+    animation: rightToLeft 4s infinite;
+}
+
+
+.anim-top-left{
+    position: relative;
+    animation: fromTopLeft 4s infinite;
+}
+.anim-top-right{
+    position: relative;
+    animation: fromTopRight 4s infinite;
+}
+
+
+/* animation-play-state:running; */
+
+@keyframes loop{
+    0%{
+        transform: translateX(-10%);
+    }
+    25%{
+        transform: translateX(5%);
+    }
+
+    50%{
+        transform: translateX(0%);
+    }
+    75%{
+        transform: translateX(5%);
+    }
+    100%{
+        transform: translateX(-10%);
+    }
+}
+
+
+@keyframes rightToLeft{
+    from{
+        transform: translateX(80%);
+    }
+    to{
+        left: 0px;
+    }
+}
+
+@keyframes leftToRight{
+    from{
+        transform: translateX(-80%);
+    }
+    to{
+        right: 0px;
+    }
+}
+
+@keyframes fromTopLeft{
+    from{
+        transform: translate(-45%,-45%);
+    }
+    to{
+        right: 0px;
+    }
+} 
+
+@keyframes fromTopRight{
+    from{
+        transform: translate(90%,-45%);
+    }
+    to{
+        right: 0px;
+    }
+}
+
+/* Our Sponsorces Section */
+/* ---------------------- */
 
 .sponsorces-title {
     text-align: center;
