@@ -156,10 +156,11 @@ a {
 /* -------------------------- */
 
 /* Features specialty details */
-.features-specialty{
+.features-specialty {
     position: relative;
     overflow: visible;
 }
+
 .feature-details {
     padding-top: 54px;
     padding-right: 90px;
@@ -188,7 +189,7 @@ a {
     padding: 10px 0;
 }
 
-.features-specialty-img{
+.features-specialty-img {
     padding-left: 10px;
 }
 
@@ -208,10 +209,66 @@ a {
     color: #FFFFFF;
 }
 
+/* Some Facts */
+/* ---------- */
+.facts-head {
+    padding-top: 230px;
+    padding-bottom: 100px;
+}
+
+
+/* Facts Statistic Box */
+.facts-stats {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 125px;
+}
+
+.fact-box {
+    padding: 47px 37px 60px 37px;
+    text-align: center;
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    box-sizing: border-box;
+    /* box-sizing: border-box; */
+}
+
+.number {
+    padding: 8px 0;
+    font-weight: 600;
+    font-size: 45px;
+    color: var(--font-primary-color);
+}
+
+.stat-title {
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--font-secondary-color);
+}
+
+
+.sponsorces-title {
+    text-align: center;
+    padding: 180px 450px 50px 450px;
+}
+
+.sponsorces-name {
+    gap: 156px;
+}
+
+.sponsorces-name>img {
+    filter: grayscale(1);
+}
 /*-----------------------------------------------------------
                     Footer section
 -------------------------------------------------------------*/
-
+.footer{
+    text-align: center;
+    padding-top: 130px ;
+    padding-bottom: 216px ;
+}
+.copyright{
+    background-color: var(--bg-color);
+}
 
 /*-----------------------------------------------------------
 -------------------   Midea Quries   ------------------------
