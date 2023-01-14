@@ -43,6 +43,19 @@ a {
     height: 100%;
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+}
+
+.title-primary {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    color: var(--font-primary-color);
+}
+
 .details-primary {
     padding: 32px 0;
     font-weight: 400;
@@ -89,9 +102,10 @@ a {
 
 /* Main Banner Section */
 /* ------------------- */
-.main-banner.flex{
+.main-banner.flex {
     flex-direction: column;
 }
+
 .main-banner {
     background-color: var(--bg-color);
     padding-bottom: 45px;
@@ -108,10 +122,92 @@ a {
     font-size: 64px;
     color: var(--font-primary-color);
 }
+
 /* Banner Image */
-.banner-img img{
+.banner-img img {
     width: 100%;
 }
+
+/* Our Features Section */
+/* -------------------- */
+.our-features {
+    padding: 85px 301px 130px 310px;
+    gap: 76px;
+}
+
+/* Our features images */
+.our-features-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+/* Explore features */
+.secondary-color-text {
+    font-weight: 500;
+    color: var(--font-secondary-color);
+}
+
+.primary-color-text {
+    color: var(--primary-color);
+}
+
+/* Features Specialty Section */
+/* -------------------------- */
+
+/* Features specialty details */
+.features-specialty{
+    position: relative;
+    overflow: visible;
+}
+.feature-details {
+    padding-top: 54px;
+    padding-right: 90px;
+}
+
+.features-title {
+    border-left: 5px var(--primary-color) solid;
+    padding-right: 146px;
+    padding-left: 21px;
+}
+
+.specialty {
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 30px;
+}
+
+.title-secondery {
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--font-primary-color);
+}
+
+.details-resize {
+    padding: 10px 0;
+}
+
+.features-specialty-img{
+    padding-left: 10px;
+}
+
+.resize-experience {
+    padding: 42px 46px;
+    font-size: 25px;
+    line-height: 40px;
+    text-align: center;
+    position: absolute;
+    bottom: -60px;
+    left: 888px;
+}
+
+.years {
+    font-weight: 700;
+    font-size: 65px;
+    color: #FFFFFF;
+}
+
 /*-----------------------------------------------------------
                     Footer section
 -------------------------------------------------------------*/
