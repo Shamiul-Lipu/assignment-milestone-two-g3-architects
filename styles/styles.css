@@ -1,22 +1,117 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+    --primary-color: #FF900E;
+    --font-primary-color: #131313;
+    --font-secondary-color: #727272;
+
+    --bg-color: rgba(255, 144, 14, 0.1);
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
+
+body {
+    font-family: 'Work Sans', sans-serif;
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
 /*---------------- Uitilites/Common styles -----------------*/
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 240px;
+}
 
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
 
+.details-primary {
+    padding: 32px 0;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--font-secondary-color);
+}
+
+.btn-primary {
+    padding: 21px 25px;
+    background-color: var(--primary-color);
+    color: #FFFFFF;
+    border: 0;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+}
 
 /*-----------------------------------------------------------
                     Header section
 -------------------------------------------------------------*/
+.navbar {
+    justify-content: space-between;
+    background-color: var(--bg-color);
+    padding-top: 50px;
+}
 
+.nav-logo {
+    font-weight: 700;
+    font-size: 45px;
+    color: var(--font-primary-color);
+}
+
+.navbar a {
+    padding-left: 100px;
+    font-weight: 500;
+    font-size: 20px;
+    color: #424242;
+}
 
 /*-----------------------------------------------------------
                     Main section
 -------------------------------------------------------------*/
 
+/* Main Banner Section */
+/* ------------------- */
+.main-banner.flex{
+    flex-direction: column;
+}
+.main-banner {
+    background-color: var(--bg-color);
+    padding-bottom: 45px;
+}
 
+/* Banner Title */
+.main-title {
+    text-align: center;
+    padding: 81px 280px 50px 280px
+}
+
+.title {
+    font-weight: 700;
+    font-size: 64px;
+    color: var(--font-primary-color);
+}
+/* Banner Image */
+.banner-img img{
+    width: 100%;
+}
 /*-----------------------------------------------------------
                     Footer section
 -------------------------------------------------------------*/
@@ -25,5 +120,3 @@
 /*-----------------------------------------------------------
 -------------------   Midea Quries   ------------------------
 -------------------------------------------------------------*/
-
-
