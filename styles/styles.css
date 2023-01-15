@@ -513,7 +513,13 @@ form>.btn-change {
 
     /* header section */
     .navbar {
-        flex-direction: column;
+        display: grid;
+        justify-items: start;
+        justify-content: space-evenly;
+    }
+
+    .navbar ul.flex {
+        display: grid;
     }
 
     /* banner */
