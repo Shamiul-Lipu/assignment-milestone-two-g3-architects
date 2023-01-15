@@ -3,10 +3,12 @@
 
 :root {
     --primary-color: #FF900E;
+    --primary-font: 'Work Sans', sans-serif;
     --font-primary-color: #131313;
     --font-secondary-color: #727272;
 
     --bg-color: rgba(255, 144, 14, 0.1);
+
 }
 
 * {
@@ -16,7 +18,7 @@
 }
 
 body {
-    font-family: 'Work Sans', sans-serif;
+    font-family: var(--primary-font);
 
 }
 
@@ -34,6 +36,7 @@ a {
     margin: 0 auto;
     overflow: auto;
     padding: 0 240px;
+    width: 100%;
 }
 
 .flex {
@@ -496,3 +499,144 @@ form>.btn-change {
 /*-----------------------------------------------------------
 -------------------   Midea Quries   ------------------------
 -------------------------------------------------------------*/
+
+/* Mobile devices */
+@media only screen and (max-width : 576px) {
+
+    .container {
+        padding: 10px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* header section */
+    .navbar {
+        flex-direction: column;
+    }
+
+    /* banner */
+    .main-title {
+        padding: 0;
+    }
+
+    .banner-img img {
+        padding-top: 10px;
+    }
+
+    /* Our features */
+    .our-features {
+        flex-direction: column;
+        padding: 20px 0;
+        gap: 50px;
+    }
+
+    .our-features-images {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .explore-features {
+        padding: 0 15px;
+    }
+
+    /* features specialty */
+
+    .features-specialty {
+        flex-direction: column;
+    }
+
+    .feature-details {
+        padding: 0;
+    }
+
+    .features-specialty-img {
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 20px 0 100px 0;
+    }
+
+    .features-specialty-img img {
+        width: 75%;
+    }
+
+    .resize-experience {
+        padding: 18px 9px;
+        bottom: 56px;
+        left: 50px;
+    }
+
+    .years {
+        font-size: 52px;
+    }
+
+    /* some facts */
+    .facts-head {
+        padding: 0;
+    }
+
+    /* animation works after first reload and clicking */
+    .facts-stats {
+        gap: 30px;
+    }
+
+    /* sponsorces */
+    .sponsorces-title {
+        padding: 0;
+    }
+
+    .sponsorces-name {
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    /* with us */
+    .more-resources {
+        padding-bottom: 22px;
+    }
+
+    @keyframes rightToLeft {
+        from {
+            transform: translateX(30%);
+        }
+
+        to {
+            left: 0px;
+        }
+    }
+
+    @keyframes leftToRight {
+        from {
+            transform: translateX(-30%);
+        }
+
+        to {
+            right: 0px;
+        }
+    }
+
+    @keyframes fromTop {
+        from {
+            transform: translateY(-25%);
+        }
+
+        to {
+            right: 0px;
+        }
+    }
+
+    .resources {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0;
+        padding: 0;
+        justify-items: center;
+    }
+
+    .resource-box {
+        width: 50%;
+    }
+
+
+}
