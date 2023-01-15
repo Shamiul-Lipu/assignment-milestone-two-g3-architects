@@ -57,7 +57,7 @@ a {
 }
 
 .details-primary {
-    padding: 32px 0;
+    padding: 32px 10px;
     font-weight: 400;
     font-size: 16px;
     color: var(--font-secondary-color);
@@ -82,6 +82,7 @@ a {
     justify-content: space-between;
     background-color: var(--bg-color);
     padding-top: 50px;
+    width: 100%;
 }
 
 .nav-logo {
@@ -91,7 +92,7 @@ a {
 }
 
 .navbar a {
-    padding-left: 100px;
+    margin: 0 10px;
     font-weight: 500;
     font-size: 20px;
     color: #424242;
@@ -189,6 +190,8 @@ a {
     padding: 10px 0;
 }
 
+/* Features specialty Image */
+
 .features-specialty-img {
     padding-left: 10px;
     position: relative;
@@ -213,11 +216,12 @@ a {
 
 /* Some Facts */
 /* ---------- */
+
+/* fact head */
 .facts-head {
-    padding-top: 230px;
+    padding-top: 130px;
     padding-bottom: 100px;
 }
-
 
 /* Facts Statistic Box */
 .facts-stats {
@@ -232,7 +236,6 @@ a {
     border-radius: 8px;
     box-sizing: border-box;
     /* box-sizing: border-box; */
-    text-align: center;
     transition: transform 0.3s ease-in;
     margin: 18px 10px 40px;
 }
@@ -267,6 +270,12 @@ a {
 .anim-left {
     position: relative;
     animation: leftToRight 4s infinite;
+    transition: transform 0.4s ease-in;
+}
+
+.anim:hover {
+    animation-play-state: paused;
+    box-shadow: 1px 5px 14px rgb(60, 60, 60);
 }
 
 .anim-right {
@@ -274,17 +283,10 @@ a {
     animation: rightToLeft 4s infinite;
 }
 
-
-.anim-top-left {
+.anim-top {
     position: relative;
-    animation: fromTopLeft 4s infinite;
+    animation: fromTop 4s infinite;
 }
-
-.anim-top-right {
-    position: relative;
-    animation: fromTopRight 4s infinite;
-}
-
 
 /* animation-play-state:running; */
 
@@ -355,19 +357,9 @@ a {
     }
 }
 
-@keyframes fromTopLeft {
+@keyframes fromTop {
     from {
-        transform: translate(-45%, -45%);
-    }
-
-    to {
-        right: 0px;
-    }
-}
-
-@keyframes fromTopRight {
-    from {
-        transform: translate(90%, -45%);
+        transform: translateY(-25%);
     }
 
     to {
@@ -377,7 +369,7 @@ a {
 
 /* Our Sponsorces Section */
 /* ---------------------- */
-
+/* sponsorces title */
 .sponsorces-title {
     text-align: center;
     padding: 180px 450px 50px 450px;
@@ -392,34 +384,37 @@ a {
 }
 
 
+/* --------------------New Section----------------- */
+/*------------------- Extra section ----------------*/
+/* ------------------------------------------------ */
 
-/*----------- Extra section ----------------*/
-/* ----------------------------------------------- */
-.with-us{
+.with-us {
     padding-top: 120px;
     padding-bottom: 100px;
 }
 
-/* more-resources */
+/* Extra More resources */
+.more-resources {
+    text-align: center;
+    padding-bottom: 100px;
+}
 
-.light-title{
+.light-title {
     font-weight: 500;
     font-size: 25px;
     color: var(--font-secondary-color);
 }
 
-.more-resources{
-    text-align: center;
-}
+/* Resource Boxes */
 
-.resources{
+.resources {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
+    gap: 20px;
     padding-top: 100px;
 }
 
-.resource-box{
+.resource-box {
     width: 80%;
     padding-bottom: 5px;
     border: 0;
@@ -428,24 +423,75 @@ a {
     overflow: hidden;
 }
 
-.resource-box img{
+.resource-box img {
     width: 100%;
 }
+
+/* stay connected */
+.stay-connected {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 0;
+}
+
+/* Subscribtion from */
+input {
+    padding: 20px 35px;
+    border: 1px #FF900E solid;
+    border-radius: 50px;
+}
+
+.stay-connected input::placeholder {
+    color: var(--primary-color);
+}
+
+form>.btn-change {
+    padding: 20px 35px;
+    border: 0;
+    border-radius: 50px;
+}
+
+/* join our team */
+.join-us {
+    padding: 100px 20px;
+    background-image: linear-gradient(to bottom, rgba(2, 5, 21, 0.809), rgba(11, 11, 11, 0.324)), url(../images/extra/script.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    border: 0;
+    border-radius: 15px;
+}
+
+.join-us>* {
+    color: #FFFFFF;
+    padding-right: 160px;
+    text-align: left;
+}
+
+.join-us>p {
+    font-weight: 600;
+    font-size: 25px;
+    padding-right: 60px;
+    padding-left: 0;
+    color: #b9b8b8e4;
+}
+
 
 /*-----------------------------------------------------------
                     Footer section
 -------------------------------------------------------------*/
 .footer {
-    text-align: center;
-    padding-top: 130px;
+    padding-top: 100px;
     padding-bottom: 216px;
 }
 
 .copyright {
+    text-align: center;
     background-color: var(--bg-color);
     border: 0;
     border-radius: 8px;
 }
+
 
 /*-----------------------------------------------------------
 -------------------   Midea Quries   ------------------------
