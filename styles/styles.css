@@ -499,8 +499,152 @@ form>.btn-change {
 /*-----------------------------------------------------------
 -------------------   Midea Quries   ------------------------
 -------------------------------------------------------------*/
+/* Braeakpoints */
+@media only screen and (max-width : 1400px) {
+    .container {
+        padding: 10px;
+    }
 
-/* Mobile devices */
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* header section */
+    .navbar {
+        display: grid;
+        justify-items: start;
+        justify-content: space-evenly;
+    }
+
+    .navbar ul.flex {
+        display: grid;
+    }
+
+    /* banner */
+    .main-title {
+        padding: 0;
+    }
+
+    .banner-img img {
+        padding-top: 10px;
+    }
+
+    /* Our features */
+    .our-features {
+        flex-direction: column;
+        padding: 20px 0;
+        gap: 50px;
+    }
+
+    .our-features-images {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .explore-features {
+        padding: 0 15px;
+    }
+
+    /* features specialty */
+
+    .features-specialty {
+        flex-direction: column;
+    }
+
+    .feature-details {
+        padding: 0;
+    }
+
+    .features-specialty-img {
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 20px 0 100px 0;
+    }
+
+    .features-specialty-img img {
+        width: 75%;
+    }
+
+    .resize-experience {
+        padding: 18px 9px;
+        bottom: 56px;
+        left: 50px;
+    }
+
+    .years {
+        font-size: 52px;
+    }
+
+    .facts-stats {
+        gap: 30px;
+    }
+
+    /* sponsorces */
+    .sponsorces {
+        padding-bottom: 50px;
+    }
+
+    .sponsorces-title {
+        padding: 0;
+    }
+
+    .sponsorces-name {
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    /* with us */
+    .more-resources {
+        padding-bottom: 22px;
+    }
+
+    @keyframes rightToLeft {
+        from {
+            transform: translateX(30%);
+        }
+
+        to {
+            left: 0px;
+        }
+    }
+
+    @keyframes leftToRight {
+        from {
+            transform: translateX(-30%);
+        }
+
+        to {
+            right: 0px;
+        }
+    }
+
+    @keyframes fromTop {
+        from {
+            transform: translateY(-25%);
+        }
+
+        to {
+            right: 0px;
+        }
+    }
+
+    .resources {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0;
+        padding: 0;
+        justify-items: center;
+    }
+
+    .resource-box {
+        width: 50%;
+    }
+
+
+}
+
+
+/* Mobile devices (works on iPhone XR min-width 414) */
 @media only screen and (max-width : 576px) {
 
     .container {
@@ -589,6 +733,10 @@ form>.btn-change {
     }
 
     /* sponsorces */
+    .sponsorces {
+        padding-bottom: 50px;
+    }
+
     .sponsorces-title {
         padding: 0;
     }
@@ -645,4 +793,55 @@ form>.btn-change {
     }
 
 
+}
+
+
+/* small divices */
+
+@media only screen and (max-width : 416px){
+
+    .features-specialty-img{
+        padding: 21px 0 110px 0;
+    }
+    .features-specialty-img img {
+        width: 65%;
+    }
+
+    
+    @keyframes rightToLeft {
+        from {
+            transform: translateX(20%);
+        }
+
+        to {
+            left: 0px;
+        }
+    }
+
+    @keyframes leftToRight {
+        from {
+            transform: translateX(-20%);
+        }
+
+        to {
+            right: 0px;
+        }
+    }
+
+    @keyframes fromTop {
+        from {
+            transform: translateY(-15%);
+        }
+
+        to {
+            right: 0px;
+        }
+    }
+
+    .join-us{
+        padding: 50px 20px;
+    }
+    .join-us>p{
+        font-size: 12px;
+    }
 }
